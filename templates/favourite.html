@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的点赞</title>
+    <style type="text/css">
+        div {
+            width: 100%;
+            height: 800px;
+            margin-top: 0px;
+            {#background: #008B8B;#}
+        }
+
+        h2 {
+            display: inline-block;
+            padding-top: 20px;
+            padding-right: 20px;
+            font-family: "微软雅黑";
+            font-size: 40px;
+            color: black;
+        }
+
+        #log {
+            color: blue;
+        }
+
+        table {
+            width: 100%;
+            font-size: .938em;
+            border-collapse: collapse; /*边框会合并为一个单一的边框*/
+        }
+
+        caption {
+            margin: 1em 0 .7em 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 120%;
+            letter-spacing: .5px;
+            color: #fff;
+        }
+
+        th {
+            text-align: left;
+            padding: .5em .5em;
+            font-weight: bold;
+            background: #66677c;
+            color: #fff;
+            text-align: center;
+        }
+
+        td {
+            padding: .5em .5em;
+            border-bottom: solid 1px #ccc;
+            text-align: center;
+        }
+
+        table, table tr th, table tr td {
+            border: 1px solid #0094ff;
+        }
+
+        /*设置边框的*/
+    </style>
+</head>
+<body style="background-image: url('assets/img/shop/background.jpg');background-size: 100%">
+<div>
+    <center>
+        <h2>我的点赞</h2>
+        <table>
+            <caption>缩放您的浏览器查看表格的响应效果！</caption>
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>产品名称</th>
+                <th>点赞数</th>
+            <tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>A</td>
+                <td>空气滤芯</td>
+                <td>{{ vote_aU }}</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>汽车电瓶</td>
+                <td>{{ vote_bU }}</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>刹车片</td>
+                <td>{{ vote_cU }}</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>汽油滤芯</td>
+                <td>{{ vote_dU }}</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>电瓶搭火线</td>
+                <td>{{ vote_eU }}</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>刹车钳</td>
+                <td>{{ vote_fU }}</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>机器学习</td>
+                <td>{{ vote_gU }}</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>C++ Primer</td>
+                <td>{{ vote_hU }}</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>Python可以这样学</td>
+                <td>{{ vote_iU }}</td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <br/>
+        <a href="/back">
+            <button type="button" style="width:150px;height:50px;">返回</button>
+        </a>
+        <br/>
+        <h3>{{ msg }}</h3>
+    </center>
+</div>
+</body>
+</html>

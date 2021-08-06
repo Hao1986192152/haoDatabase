@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 支付 </title>
+    <style type="text/css">
+        div {
+            width: 100%;
+            height: 800px;
+            margin-top: 0px;
+            {#background: #008B8B;#}
+        }
+        h2 {
+            font-family: "微软雅黑";
+            font-size: 40px;
+            color: black;
+        }
+        #log {
+            color: blue;
+        }
+    </style>
+</head>
+<body style="background-image: url('assets/img/shop/background.jpg');background-size: 100%">
+<div class="card pay-card">
+    <center>
+        <img src="assets/img/shop/payNew.jpg">
+        <br/>
+        <h4>￥{{ total_price }}</h4>
+        <a href="/payment">
+            <button type="button" style="width:150px;height:50px;">返回</button>
+        </a>
+        <a href="/back">
+            <button type="button" style="width:150px;height:50px;">支付成功</button>
+        </a>
+    </center>
+</div>
+<script src="assets/js/shoppingCart.js"></script>
+</body>
+</html>
